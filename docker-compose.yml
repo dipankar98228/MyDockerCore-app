@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  wiprocore:
+    image: ${DOCKER_REGISTRY-}wiprocore
+    build:
+      context: .
+      dockerfile: WiproCore/Dockerfile
